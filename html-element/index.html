@@ -1,0 +1,53 @@
+<!-- HTMLElement
+    .children   (element)
+    .textContent    (Node)
+
+    .appendChild()  (Node)
+    
+    .remove()   (Element) 
+    .document.createElement
+-->
+
+
+<head>
+    <meta charset="utf-8/">
+    <title>Html element</title>
+</head>
+
+<body>
+    <!-- <h1>TODO list</h1>
+
+    <ul id="todo-list">
+        <li>Haircut</li>
+        <li>Lunch with Sora</li>
+        <li>Dinner with Maria</li>
+    </ul>
+
+    <script>
+        var todoList = document.getElementById('todo-list');
+        var newTodo = document.createElement('li');
+        newTodo.textContent = 'Cook tonight';
+        todoList.appendChild(newTodo);
+
+    </script> -->
+
+<p>123</p>
+<p>abc</p>
+
+<script> 
+    
+    var list = document.getElementsByTagName('p');
+    for(var i = 0; i < list.length; i++)
+    {
+        var textNode = document.createTextNode('Coders.Tokyo');
+        var a = document.createElement('a');
+        a.href = "https://coders.tokyo/blog/";
+        a.appendChild(textNode);
+        list[i].append(a);
+        console.log(list[i]);
+    }
+
+    
+
+</script>
+</body>
