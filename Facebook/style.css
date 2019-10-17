@@ -1,0 +1,116 @@
+/* Phần 1 */
+
+h1{
+    margin-bottom: 10px;
+}
+
+td{
+    color: white;
+}
+
+.menu-bar{
+    height: 82px;
+    min-width: 980px;
+    background-color: #3578E5;
+    padding-top: 13px;
+    position: relative;
+}
+
+.item{
+    font-size: 14px;
+    color: white;
+}
+
+.child{
+    width: 500px;
+    height: 80px;
+    position: fixed;
+    right: 450px;
+}
+
+.menu-bar .header{
+    margin: 0 auto;
+    width: 980px;
+    margin-left: 150px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.face{
+    font-family: inherit;
+    font-size: 34px;
+    color: antiquewhite;
+}
+
+.login{
+    height: 24px;
+    width: 81px;
+    font-size: 14px;
+    background-color: rgb(47, 79, 129);
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+.login:hover{
+    background-color: rgb(10, 34, 71);
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*  Phần 2 */
+
+.main{
+    background: linear-gradient(white, #D3D8E8);
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.clearly-fix{
+    width: 1000px;
+    height: 700px;
+    position: fixed;
+    left: 155px;
+    display: flex;
+}
+
+.left-bar{
+    width: 565px;
+    float: left;
+}
+
+.left-bar .text-content{
+    font-size: 20px;
+    margin: 40px
+}
+
+
+.regist
+{
+    display: flex;
+    font-size: 21px;
+    width: 200px;
+    position: relative;
+    left: 250px;
+    margin: 8px;
+}
+
+.content-1
+{
+    display: flex;
+    font-size: 19px;
+    width: 250px;
+    position: relative;
+    left: 250px;
+    margin-left: 10px;
+}
