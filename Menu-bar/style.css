@@ -1,0 +1,45 @@
+*{
+  font-style: Arial sans-serif;
+}
+
+.header{
+  display: flex;  
+  justify-content: center;
+  height: 50px;
+  background-color: blue;
+}
+
+.header a{
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header a.item:hover{
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 550px)
+{
+  .header{
+    height: 400px;
+    flex-direction: column;
+  }
+
+  .header .item{
+    /* margin-top: 200px; */
+  }
+
+  .icon{
+    position: fixed;
+    top: 0;
+  }
+
+  .show{
+    position: fixed;
+    top: 0;
+    left: 50px;
+  }
+}
