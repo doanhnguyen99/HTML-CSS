@@ -1,0 +1,97 @@
+.header{
+    height: 50px;
+    background-color: rgb(191, 216, 201);
+}
+
+
+
+.custom{
+    font-size: 18px;
+    height: 100%;
+}
+
+.item-row-1
+{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* // Footer */
+
+.footer{
+    margin-top: 50px;
+    height: 400px;
+    background-color: pink;
+    font-size: 16px;
+}
+
+.main-title{
+    margin: 20px 0;
+}
+
+.footer .child-1{
+    margin: 40px 0;
+}
+
+.footer p{
+    margin: 20px 0;
+} 
+
+.footer .item-2{
+    font-size: 20px;
+}
+
+.footer .item-3{
+    padding: 20px 30px;
+    margin: 20px 0 20px 60px;
+    height: 350px;
+    width: 430px;
+    background-color: white;
+}
+
+.message{
+    height: 70px;
+}
+
+.message .text-message{
+    height: 80%;
+}
+
+.submit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.custom .icon{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .abc{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .custom div:(:first-child){display: none;}
+    .custom a.icon{
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .custom .responsive{position: relative;}
+    .custom .responsive .icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .custom .responsive div{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
