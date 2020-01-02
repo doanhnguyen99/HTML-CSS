@@ -28,10 +28,6 @@
     flex-direction: column;
   }
 
-  .header .item{
-    /* margin-top: 200px; */
-  }
-
   .icon{
     position: fixed;
     top: 0;
@@ -43,3 +39,9 @@
     left: 50px;
   }
 }
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
