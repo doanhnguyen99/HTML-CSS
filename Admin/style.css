@@ -25,7 +25,7 @@
 .main{
     /* height: 400px; */
     margin-top: 25px;
-    background-color: rgb(231, 228, 228);
+    background-color: #fff;
     /* background: linear-gradient(0deg, rgba(130,130,186,0.6502976190476191) 25%, rgba(100,117,201,1) 83%, rgba(55,99,224,0.12368697478991597) 100%); */
 
 }
@@ -122,4 +122,19 @@ p{
 .info-table{
     /* border: 1px solid rgb(85, 80, 80); */
     border-radius: 5px;
+}
+
+.table-management{
+    margin-top: 50px;
+}
+
+.custom-position-button
+{
+    display: flex;
+    justify-content: center;
+}
+
+.custom-position-modal{
+    display: flex;
+    justify-content: center;
 }

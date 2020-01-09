@@ -62,37 +62,54 @@
                           <tr>
                             <th scope="col">STT</th>
                             <th scope="col">Name</th>
-                            <th scope="col">Introduce</th>
-                            <th scope="col">Action</th>
+                            <th scope="col">
+                                <select name="Position" id="#position">BU
+                                    <option value="1">BU-1</option>
+                                    <option value="1">BU-2</option>
+                                    <option value="1">BU-3</option>
+                                    <option value="1">BU-4</option>
+                                </select>
+                            </th>
+                            <th scope="col">
+                                <select name="Position" id="#position">Position
+                                    <option value="1">Dev</option>
+                                    <option value="1">Manager</option>
+                                </select>
+                            </th>
+                            <th scope="col">Role</th>
+                            <th scope="col"></th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <th scope="row">1</th>
-                            <td>Gitlab</td>
-                            <td>Cách sử dụng Git</td>
-                            <td>
-                                <button type="button" class="btn btn-primary">Edit</button>
-                                <button type="button" class="btn btn-secondary">Delete</button>
-                            </td>
+                            <td>Nguyen Van A</td>
+                            <td>3</td>
+                            <td>DEV</td>
+                            <td>User</td>
+                            <td>X</td>                      
                           </tr>
+
                           <tr>
-                            <th scope="row">2</th>
-                            <td>Hourensho</td>
-                            <td>Hourensho</td>
-                            <td>
-                                <button type="button" class="btn btn-primary">Edit</button>
-                                <button type="button" class="btn btn-secondary">Delete</button>
+                            <th scope="row">1</th>
+                            <td>Nguyen Van B</td>
+                            <td>2</td>
+                            <td>Manger</td>
+                            <td>Admin</td>
+                            <td>X</td>
+                                
                             </td>
                           </tr>
                           <tr>
                             <th scope="row">3</th>
-                            <td>Renraku</td>
-                            <td>the Bird</td>
+                            <td>ABC</td>
+                            <td>4</td>
                             <td>
-                                <button type="button" class="btn btn-primary">Edit</button>
-                                <button type="button" class="btn btn-secondary">Delete</button>
+                                BrSE
                             </td>
+
+                            <td></td>
+                            <td></td>
                           </tr>
 
                           <tr>
@@ -100,11 +117,18 @@
                                 
                                 <!-- <button type="button" class="btn btn-primary btn-lg" data-target="#myModal" data-toggle="modal"><i class="fas fa-plus"></i> Upload</button> -->
                                     <!-- Button to Open the Modal -->
-                                    <button type="button" class="btn btn-primary btn-lg" data-target="#myModal" data-toggle="modal"><i class="fas fa-plus"></i> Upload</button>        
+                                    <button type="button" class="btn btn-primary btn-lg"><i class="fas fa-plus"></i> Add User</button>
+                                  
+                                    
+                                    
+                                    
                             </td>
                           </tr>
+
                         </tbody>
                     </table>
+
+
                 </div>
                 
 
@@ -118,56 +142,6 @@
     </div>
 
     
-    <!-- The Modal -->
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-          
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Upload Document</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            
-            <!-- Modal body -->
-            <div class="modal-body modal-size">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <button class="btn btn-outline-secondary" type="button" id="button-addon1">Name</button>
-                    </div>
-                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                </div>
-
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <button class="btn btn-outline-secondary" type="button" id="button-addon1">Introduce</button>
-                    </div>
-                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                </div>
-
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <button class="btn btn-outline-secondary" type="button" id="button-addon1">Attack File</button>
-                    </div>
-                    <input type="file" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                </div>
-
-                <div class="custom-position-modal">
-                    <button type="button" class="btn btn-success btn-lg">Upload</button>
-                </div>
-
-
-
-
-            </div>
-            
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-            
-          </div>
-        </div>
-      </div>   
+    
 
 </body>
