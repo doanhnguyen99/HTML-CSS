@@ -1,0 +1,125 @@
+<head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Jquery library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css"> 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker-standalone.css"> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
+</head>
+
+<body>
+    
+ 
+    <div class="container header">
+        <div class="row">
+           <div class="col-md-4 logo">
+               <a class="logo" href="#"><img src="./img/logoominext2.png" alt="Ominext"></a>
+           </div>
+
+            <div class="col-md-4"></div>   
+
+           <div class="col-md-4">
+                <div class="row logo-header">
+                    <a href="#"> <i class="fas fa-user-graduate fa-3x"></i></a>
+                </div>
+
+                <div class="row logo-header">
+                    <h4>Doanh Nguyễn</h4>
+                </div>
+           </div>
+
+        </div>
+    </div>
+
+    <div class="container main">
+        <!-- <div class="col">
+            <div class="component"><a href="#">abc</a></div>
+        </div> -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="component"><a href="#"><h3>User management</h3></a></div>
+                <div class="component"><a href="./document_manager.html"><h3>Document management</h3></a></div>
+                <div class="component"><a href="#"><h3>Course management</h3></a></div>
+                <div class="component"><a href="#"><h3>Test management</h3></a></div>
+                <div class="component"><a href="./reportmangager.html"><h3>Report management</h3></a></div>
+                <div class="component"><a href="./ranking.html"><h3>Ranking</h3></a></div>
+            </div>
+
+            <div class="col">
+                <div class="title-ranking">
+                    <p><strong>Ranking</strong></p>
+                </div>
+
+                <div class="row selection-content">
+                    <div class='col-sm-5'>
+                        <input type='date' class="form-control child-date" id="datetimepicker">
+                    </div>
+                    
+
+                    <div class="col-md-2"></div>
+
+                    <div class="col-md-5">
+                        <input type="date" class="form-control child-date" id="datetimepicker">
+                    </div>
+                </div>
+
+                <div class="row info-table">
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Count</th>
+                            <th scope="col">Medium score</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>PHP</td>
+                            <td>23/01/2020</td>
+                            <td>50</td>
+                            <td>8.2</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>JS</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>9.9</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>C#</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>8.5</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+        
+        
+
+
+    </div>
+
+    
+    
+    <script src="./app.js"></script>
+
+</body>
