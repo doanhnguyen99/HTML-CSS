@@ -1,0 +1,434 @@
+<head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Thư viện js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- jquery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+
+</head>
+
+<body>
+    
+ 
+    <div class="container header">
+        <div class="row">
+           <div class="col-md-4 logo">
+               <a class="logo" href="#"><img src="./img/logoominext2.png" alt="Ominext"></a>
+           </div>
+
+            <div class="col-md-4"></div>   
+
+           <div class="col-md-4">
+                <div class="row logo-header">
+                    <a href="#"> <i class="fas fa-user-graduate fa-3x"></i></a>
+                </div>
+
+                <div class="row logo-header">
+                    <h4>Doanh Nguyễn</h4>
+                </div>
+           </div>
+
+        </div>
+    </div>
+
+    <div class="container main">
+        <!-- <div class="col">
+            <div class="component"><a href="#">abc</a></div>
+        </div> -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="component"><a href="./user_management.html"><h3>User management</h3></a></div>
+                <div class="component"><a href="./CourseManagement.html"><h3>Course management</h3></a></div>
+                <div class="component"><a href="./TestManager.html"><h3>Test management</h3></a></div>
+                <div class="component"><a href="./reportmangager.html"><h3>Report management</h3></a></div>
+                <div class="component"><a href="./ranking.html"><h3>Ranking</h3></a></div>
+            </div>
+
+            <div class="col">
+                <div class="title-ranking">
+                    <p><strong>Course Management</strong></p>
+                </div>
+
+                <div class="search">
+                    <div class="col-md-4">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Find username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row table-management">
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                          <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Member</th>
+                            <th scope="col">Time End</th>
+                            <th scope="col">NOQ</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Horenso
+                                <br>
+                                <div class="fix-button"><button type="button" class="btn btn-primary btn-lg" data-target="#EditInfo" data-toggle="modal">Edit</button></div>
+                            </td>
+
+                            <td>15:30
+                                <br>
+                                15/01/2020
+                            </td>
+                            <td>Sakura 4</td>
+                            <td>20p</td>
+                            <td>20</td>
+                            <td><a href="#" onclick="myFunction()"><i class="fas fa-times"></i></a></td>                      
+                          </tr>
+
+                          <tr>
+                            <td>Gitlab
+                                <br>
+                                <div class="fix-button"><button type="button" class="btn btn-primary btn-lg" data-target="#EditInfo" data-toggle="modal">Edit</button></div>
+                            </td>
+                            <td>15:30
+                                <br>
+                                15/01/2020
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="#" onclick="myFunction()"><i class="fas fa-times"></i></a></td>                      
+                          </tr>
+
+                          <tr>
+                            
+                          </tr>
+
+                          <tr>
+                            <td colspan="2" class="custom-position-button">
+                                <!-- <button type="button" class="btn btn-primary btn-lg" data-target="#myModal" data-toggle="modal"><i class="fas fa-plus"></i> Upload</button> -->
+                                    <!-- Button to Open the Modal -->
+                                    <button type="button" class="btn btn-success btn-lg" data-target="#myModal" data-toggle="modal"><i class="fas fa-plus"></i> Create</button>               
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+<!-- The Modal => Add User -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Create Test</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body modal-size">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1">Name</button>
+                </div>
+                <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button">Time</button>
+                </div>
+                <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                    <option selected>Choose...</option>
+                    <option value="1">15:30 20/01/2020</option>
+                    <option value="2">15:30 21/01/2020</option>
+                    <option value="3">16:30 21/01/2020</option>
+                </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1">Member</button>
+                </div>
+                <input type="text" class="form-control" placeholder="Sakura" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button">Time End</button>
+                </div>
+                <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                    <option selected>Choose...</option>
+                    <option value="1">16:30 20/01/2020</option>
+                    <option value="2">16:30 21/01/2020</option>
+                    <option value="3">17:30 21/01/2020</option>
+                </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1">Number of Question</button>
+                </div>
+                <input type="text" class="form-control" placeholder="10 20s ..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+            
+            <button type="button" class="btn btn-primary btn-lg ml-3" data-target="#AddQuestion" data-toggle="modal">Add Question</button>
+
+
+            <div class="custom-position-modal">
+                <button type="button" class="btn btn-success btn-lg">Create</button>
+            </div>
+
+
+
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+</div>
+
+<!-- Edit Info -->
+
+<div class="modal" id="EditInfo">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Edit Course</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body modal-size">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1">Name</button>
+                </div>
+                <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button">Time</button>
+                </div>
+                <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                    <option selected>Choose...</option>
+                    <option value="1">15:30 20/01/2020</option>
+                    <option value="2">15:30 21/01/2020</option>
+                    <option value="3">16:30 21/01/2020</option>
+                </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1">Room</button>
+                </div>
+                <input type="text" class="form-control" placeholder="Sakura" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1">Trainer</button>
+                </div>
+                <input type="text" class="form-control" placeholder="DanhNT" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button">Member</button>
+                </div>
+                <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                    <option selected>Choose...</option>
+                    <option value="1">BU-1</option>
+                    <option value="2">BU-2</option>
+                    <option value="3">BU-3</option>
+                    <option value="4">BU-4</option>
+                </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Upload</button>
+                </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03">
+                  <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+                </div>
+            </div>
+
+            <div class="custom-position-modal">
+                <button type="button" class="btn btn-success btn-lg">Save</button>
+            </div>
+
+
+
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+</div>
+
+<!-- Add Question -->
+
+<div class="modal" id="AddQuestion">
+    <div class="modal-dialog" style="max-width:800px; width: 700px;">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Add Question</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3" style="padding: 0;">
+                        <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                            <ol class="custom-ol">
+                                <li><a href="#">Question 1</a></li>
+                                <li><a href="#">Question 2</a></li>
+                                <li><a href="#">Question 3</a></li>
+                                <li><a href="#">Question 4</a></li>
+                                <li><a href="#">Question 5</a></li>
+                                <li><a href="#">Question 6</a></li>
+                                <li><a href="#">Question 7</a></li>
+                                <li><a href="#">Question 8</a></li>
+                                <li><a href="#">Question 9</a></li>
+                                <li><a href="#">Question 10</a></li>
+                                <li><a href="#">Add Question</a></li>
+                            </ol>       
+                          </div>
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <button class="btn btn-outline-secondary" type="button">Type Question</button>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                                <option selected>Choose...</option>
+                                <option value="1">Trắc Nghiệm</option>
+                                <option value="2">Tự luận</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3 align-self-center">
+                                <h3>Time</h3>
+                                <i class="fas fa-hourglass-start fa-3x"></i>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h4>Upload Image</h4>
+                                <input type="file">
+                                <div class="upload-image">
+                                    <i class="fas fa-images fa-4x"></i>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <h4>Point</h4>
+                                <h3>10</h3>
+                            </div>
+                        </div>
+
+                        <!-- A Answer -->
+                        <div class="row mt-5 d-flex justify-content-center">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1">A</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Đáp án A" aria-label="Username" aria-describedby="basic-addon1">
+                              </div>
+                        </div>
+
+                        <!-- B Answer -->
+                        <div class="row mt-5 d-flex justify-content-center">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1">B</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Đáp án B" aria-label="Username" aria-describedby="basic-addon1">
+                              </div>
+                        </div>
+
+                        <!-- C Answer -->
+                        <div class="row mt-5 d-flex justify-content-center">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1">C</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Đáp án C" aria-label="Username" aria-describedby="basic-addon1">
+                              </div>
+                        </div>
+
+                        <!-- D Answer -->
+                        <div class="row mt-5 d-flex justify-content-center">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1">D</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Đáp án D" aria-label="Username" aria-describedby="basic-addon1">
+                              </div>
+                        </div>
+
+                        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Done</a>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+</div>
+
+
+<script src="./app.js"></script>
+
+</body>

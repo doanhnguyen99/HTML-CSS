@@ -1,0 +1,242 @@
+<head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Thư viện js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    
+ 
+    <div class="container header">
+        <div class="row">
+           <div class="col-md-4 logo">
+               <a class="logo" href="#"><img src="./img/logoominext2.png" alt="Ominext"></a>
+           </div>
+
+            <div class="col-md-4"></div>   
+
+           <div class="col-md-4">
+                <div class="row logo-header">
+                    <a href="#"> <i class="fas fa-user-graduate fa-3x"></i></a>
+                </div>
+
+                <div class="row logo-header">
+                    <h4>Doanh Nguyễn</h4>
+                </div>
+           </div>
+
+        </div>
+    </div>
+
+    <div class="container main">
+        <!-- <div class="col">
+            <div class="component"><a href="#">abc</a></div>
+        </div> -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="component"><a href="./user_management.html"><h3>User management</h3></a></div>
+                <div class="component"><a href="./CourseManagement.html"><h3>Course management</h3></a></div>
+                <div class="component"><a href="./TestManager.html"><h3>Test management</h3></a></div>
+                <div class="component"><a href="./reportmangager.html"><h3>Report management</h3></a></div>
+                <div class="component"><a href="./ranking.html"><h3>Ranking</h3></a></div>
+            </div>
+
+            <div class="col">
+                <div class="title-ranking">
+                    <p><strong>Document Management</strong></p>
+                </div>
+
+                <div class="search">
+                  <div class="col-md-4">
+                      <div class="input-group mb-3">
+                          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+                <div class="row table-management">
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                          <tr>
+                            <th scope="col">STT</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">
+                                <select name="Position" id="#position">BU
+                                    <option value="1">BU-1</option>
+                                    <option value="1">BU-2</option>
+                                    <option value="1">BU-3</option>
+                                    <option value="1">BU-4</option>
+                                </select>
+                            </th>
+                            <th scope="col">
+                                <select name="Position" id="#position">Position
+                                    <option value="1">Dev</option>
+                                    <option value="1">Manager</option>
+                                </select>
+                            </th>
+                            <th scope="col">Role</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Nguyen Van A</td>
+                            <td>3</td>
+                            <td>DEV</td>
+                            <td>User</td>
+                            <td>X</td>                      
+                          </tr>
+
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Nguyen Van B</td>
+                            <td>2</td>
+                            <td>Manager</td>
+                            <td>Admin</td>
+                            <td>X</td>
+                                
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ABC</td>
+                            <td>4</td>
+                            <td>
+                                BrSE
+                            </td>
+
+                            <td></td>
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td colspan="2" class="custom-position-button">
+                                
+                                <!-- <button type="button" class="btn btn-primary btn-lg" data-target="#myModal" data-toggle="modal"><i class="fas fa-plus"></i> Upload</button> -->
+                                    <!-- Button to Open the Modal -->
+                                    <button type="button" class="btn btn-primary btn-lg" data-target="#myModal" data-toggle="modal"><i class="fas fa-plus"></i> Add User</button>
+                                  
+                                    
+                                    
+                                    
+                            </td>
+                          </tr>
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+                
+
+               
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Upload Document</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body modal-size">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1">Name</button>
+                </div>
+                <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon1">Email</button>
+              </div>
+              <input type="email" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon1">Password</button>
+            </div>
+            <input type="password" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button">BU</button>
+                </div>
+                <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                    <option selected>Choose...</option>
+                    <option value="1">BU-1</option>
+                    <option value="2">BU-2</option>
+                    <option value="3">BU-3</option>
+                    <option value="4">BU-4</option>
+                </select>
+              </div>
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button">Position</button>
+                </div>
+                <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                    <option selected>Choose...</option>
+                    <option value="1">DeV</option>
+                    <option value="2">Test</option>
+                    <option value="3">Manager</option>
+                    <option value="4">BrSE</option>
+                </select>
+              </div>
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button">Role</button>
+                </div>
+                <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                    <option selected>Choose...</option>
+                    <option value="1">User</option>
+                    <option value="2">Admin</option>
+                </select>
+              </div>
+
+            <div class="custom-position-modal">
+                <button type="button" class="btn btn-success btn-lg">Upload</button>
+            </div>
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+</div> 
+    
+
+</body>
