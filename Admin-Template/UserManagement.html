@@ -13,11 +13,7 @@
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"> -->
    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-   <script>        
-    $(document).ready(function(){
-      $('.modal').modal();
-    });
-    </script>
+  
 </head>
 
 <body>
@@ -44,19 +40,19 @@
       </li>
 
       <li id="dash_products">
-        <div id="dash_products_header" class="collapsible-header waves-effect"><b>Course Management</b></div>
+        <div><a href="./CourseManagement.html"><strong>Course Management</strong></a></div>
       </li>
       
       <li id="dash_products">
-        <div id="dash_products_header" class="collapsible-header waves-effect"><b>Test Management</b></div>
+        <div><a href="./TestManagement.html"><strong>Course Management</strong></a></div>
       </li>
 
       <li id="dash_products">
-        <div id="dash_products_header" class="collapsible-header waves-effect"><b>Report Management</b></div>
+        <div><a href="./ReportManagement.html"><strong>Report Management</strong></a></div>
       </li>
 
       <li id="dash_products">
-        <div id="dash_products_header" class="collapsible-header waves-effect"><b>Ranking</b></div>
+        <div><a href="./Ranking.html"><strong>Ranking</strong></a></div>
       </li>
 
       
@@ -101,7 +97,7 @@
     <nav>
       <div class="nav-wrapper indigo darken-2">
         <a style="margin-left: 20px;" class="breadcrumb" href="#!">Admin</a>
-        <a class="breadcrumb" href="#!">Index</a>
+        <a class="breadcrumb" href="#!">User Management</a>
 
         <div style="margin-right: 20px;" id="timestamp" class="right"></div>
       </div>
@@ -111,7 +107,7 @@
   <main>
    
     <div class="row">
-      <h1 style="text-align: center; margin-top: 100px;">Document Management</h1>
+      <h1 style="text-align: center; margin-top: 100px;">User Management</h1>
     </div>
 
     <div class="container">
@@ -131,7 +127,7 @@
       </div>
 
       <div class="row" style="margin: 20px 0 40px 0;">
-        <table class="highlight centered responsive-table">
+        <table id="style-table">
           <thead>
             <tr>
                 <th>STT</th>
@@ -171,7 +167,11 @@
             <!-- Add User -->
             <tr>
               <td colspan="2" >
-                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+                <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+                <div class="change-position">
+                  <a class="waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons left">person_add</i>Add User</a>
+                </div>
+
               </td>
             </tr>
           </tbody>
@@ -182,8 +182,78 @@
 
     <div id="modal1" class="modal">
       <div class="modal-content">
-        <h4>Tutorialsplane.com</h4>
-        <p>Learn more @ tutorialsplane.com!</p>
+        <h3>Upload Document</h3>
+        <!-- Name -->
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Name</label>
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">email</i>
+            <input id="icon_prefix" type="email" class="validate">
+            <label for="icon_prefix">Email</label>
+          </div>
+        </div>
+        <!-- PassWord -->
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">vpn_lock</i>
+            <input id="icon_prefix" type="password" class="validate">
+            <label for="icon_prefix">PassWord</label>
+          </div>
+        </div>
+
+        <!-- BU -->
+        <div class="row">
+          <label>BU Selection</label><br>
+             <div class="col s6">
+              <select>
+                <option value = "" disabled selected>Select BU</option>
+                <option value = "1">BU-1</option>
+                <option value = "2">BU-2</option>
+                <option value = "3">BU-3</option>
+                <option value = "4">BU-4</option>
+             </select>
+             </div>               
+        </div>
+
+        <!-- Position -->
+        <div class="row">
+          <label>Position</label><br>
+             <div class="col s6">
+              <select multiple>
+                <option value = "" disabled selected>Position's Your</option>
+                <option value = "1">Dev</option>
+                <option value = "2">Test</option>
+                <option value = "3">BrSE</option>
+                <option value = "4">Manager</option>
+             </select>
+             </div>               
+        </div>
+
+        <!-- Role -->
+        <div class="row">
+          <label>Role</label><br>
+             <div class="col s6">
+              <select>
+                <option value = "" disabled selected>Role's Your</option>
+                <option value = "1">Admin</option>
+                <option value = "2">User</option>
+             </select>
+             </div>               
+        </div>
+
+        <div class="row">
+          <button class="btn waves-effect waves-light" type="submit" name="action">UpLoad
+            <i class="material-icons right">file_upload</i>
+          </button>
+        </div>
+
       </div>
       <div class="modal-footer">
         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -219,6 +289,19 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+
+  <script>        
+    $(document).ready(function(){
+      $('.modal').modal();
+    });
+    </script>
+
+  <script>
+    $(document).ready(function() {
+      $('select').material_select();
+    });
+  </script>
+
 </body>
 
 </html>

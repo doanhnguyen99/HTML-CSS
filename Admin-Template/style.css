@@ -49,3 +49,32 @@ a{
   width: auto;
 }
 
+/* Style Table */
+
+#style-table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#style-table td, #style-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#style-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#style-table tr:hover {background-color: #ddd;}
+
+#style-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.change-position{
+  display: flex;
+  justify-content: center;
+}
