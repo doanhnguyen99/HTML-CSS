@@ -51,6 +51,7 @@ form label{
     transition: 200ms ease;
 }
 
+
 input:focus + label, input:valid + label{
     top: -14px;
     left: 0px;
