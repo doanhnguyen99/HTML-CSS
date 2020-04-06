@@ -21,6 +21,9 @@ body{
     display: flex;
     align-items: center;
     height: 120px;
+    /* position: fixed; */
+    /* position: fixed;
+    top: 0px; */
 }
 
 .header .title-header{
@@ -84,11 +87,12 @@ body{
     height: 5px;
     width: 100px;
     background-color: #f4623a;
+    /* background-color: white; */
 }
 
 .slogan-content{
     margin-top: 30px;
-    height: 40px;
+    height: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -119,20 +123,46 @@ body{
     
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: #f4623a;
-    outline: none;
-    /* border-color: #f4623a; */
-}
 
 .btn-find{
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* text-shadow:  2px 12px rgba(0, 0, 0, 0.3); */
 }
 
-.btn-primary:hover{
+.btn-primary:checked{
+    color: black;
     background-color: #f14b1c;
 }
+
+.main{
+    height: 450px;
+    width: 100%;
+    background-color: #f4623a;
+}
+
+/* Main */
+.main{
+    padding-top: 70px;
+}
+
+.slogan-header:nth-child(1){
+    margin: 0;
+    height: 80px;
+    color: white;
+}
+
+/* Button */
+
+.custom-button{
+    margin-top: 30px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
