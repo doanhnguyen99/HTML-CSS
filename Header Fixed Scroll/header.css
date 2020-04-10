@@ -1,0 +1,37 @@
+.main{
+    /* display: block; */
+    display: flex;
+    height: 300px;
+    margin-top: 100px;
+}
+
+.item-1{
+    background-color: red;
+    flex-grow: 1;
+}
+
+.item-2{
+    background-color: blue;
+    flex-grow: 1;
+}
+
+.item-3{
+    background-color: green;
+    flex-grow: 1;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    /* display: inline-block; */
+    width: 100%;
+    display: flex;
+}
+
+@media(max-width: 560px){
+   .main{
+       display: flex;
+       flex-direction: column;
+   }
+}
+
