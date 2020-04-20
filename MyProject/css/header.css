@@ -21,6 +21,9 @@ body{
     display: flex;
     align-items: center;
     height: 120px;
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
     /* position: fixed; */
     /* position: fixed;
     top: 0px; */
