@@ -69,3 +69,8 @@ form button{
     text-decoration: none;
     display: block;
 }
+
+.redirect-register{
+    color: rgb(190, 190, 201);
+    text-decoration: none;
+}

@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -14,13 +15,16 @@
       <div class="row row-header">
         <!-- Logo Header -->
         <div class="col-md-4">
-          <a href="#" class="title-header" style="text-align: center;"><p class="h2 text-uppercase"><i class="fas fa-shopping-cart"></i>  Shopping Now</p></a>
+          <a href="#" class="title-header" style="text-align: center;">
+            <p class="h1">HaNoi Hotel</p>
+          </a>
         </div>
 
         <!-- Navbar Header -->
         <div class="col-md-5 header-content">
           <div class="topnav">
-            <a class="active" href="#home">Home</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
             <a href="#contact">Room</a>
             <a href="#about">Blog</a>
           </div>
@@ -36,7 +40,7 @@
       <!-- Slogan website -->
       <div class="row slogan-header">
         <div class="item-slogan">
-          <p class="h1 uppercaser font-weight-bold">YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES</p>
+          <p class="h1 uppercaser font-weight-bold">Welcome to HaNoi International Hotel</p>
         </div>
       </div>
       
@@ -51,13 +55,28 @@
       <div class="container">
         <div class="row slogan-content">
           <div class="item-content-header">
-            <p>Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
+            <p style="font-size: 20px;">A Perfect Place To Stay</p>
           </div>
         </div>
 
         <div class="row btn-find">
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
         </div>
+
+        <div class="row date-book">
+          <div class="col-md-5">
+            <label for="#">Check-in Date</label>
+            <input class="form-control" type="date" placeholder="Check-in Date">
+          </div>
+          <div class="col-md-5">
+            <label for="#">Check-out Date</label>
+            <input class="form-control" type="date" placeholder="Check-out Date">
+          </div>
+          <div class="col-md-2" style="padding-top: 33px;">
+            <button type="button" class="btn btn-success">Room Suggest</button>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -66,32 +85,97 @@
   <!-- Main Component -->
 
   <div class="main">
-    <div class="container">
-      <div class="row slogan-header">
-        <div class="item-slogan" style="height: 80px;">
-          <p class="h2 uppercaser font-weight-bold">We've got what you need!</p>
+
+    <div class="component-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3" style="text-align: center;">
+            <p>50</p>
+            <span>Hotel Branch</span>
+          </div>
+
+          <div class="col-sm-3" style="text-align: center;">
+            <p>20000</p>
+            <span>Happy Guests</span>
+          </div>
+
+          <div class="col-sm-3" style="text-align: center;">
+            <p>100</p>
+            <span>Room</span>
+          </div>
+
+          <div class="col-sm-3" style="text-align: center;">
+            <p>100</p>
+            <span>Destionations</span>
+          </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="wrap-divide">
-          <div class="devider" style="background-color: white !important;"></div>
-        </div>
-      </div>
-
-      <div class="row slogan-content">
-        <div class="item-content-header" style="color: white;">
-          <p>Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
-        </div>
-      </div>
-
-      <div class="custom-button">
-        <a class="btn btn-light btn-xl js-scroll-trigger" href="#about">Get Started!</a>
-      </div>
-
     </div>
-  </div>
 
+    <div class="component-2">
+      <div class="container">
+        <div class="row">
+          <div class="item"><h1>LUXURY ACCOMMODATION</h1></div>
+          <div class="item"><h2>ELEGANTLY STYLISH, LIGHT-FILLED ROOMS</h2></div>
+          <div class="item">
+            <p>Hanoi International Hotel provides 411 ample and luminous rooms, all decorated in warm colors with superior quality wooden furniture. They are equipped with a full range of facilities and exclusive services to ensure that our guests enjoy an unforgettably pleasant stay. The greatest care has been taken of even the tiniest details to guarantee that your stay in Hanoi is a truly exceptional experience.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 room-style">
+            <div class="item-img">
+              <img src="./image/deluxe-room.jpg" alt="deluxe-room">
+            </div>
+            <div class="room-content">
+              <a href="#" class="name-hotel"><p>DELUXE ROOM</p></a>
+              <p>Located between the 4th and 13rd floor with sweeping view overlooking the vibrant city.</p>
+              <div class="set-location-in-roomContent">
+                <a href="#">Read more &rarr;</a>
+                <p style="top: 50px;">Rates from $ 75.00</p>
+                <button type="button" class="btn btn-outline-primary">BOOK NOW</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 room-style">
+            <div class="item-img">
+              <img src="./image/grand_deluxe-room.jpg" alt="grand_deluxe-room">
+            </div>
+            <div class="room-content">
+              <a href="#" class="name-hotel"><p>GRAND DELUXE ROOM</p></a>
+              <p>Providing an average of 34sqm of comfortable living space, The Grand Deluxe Room offers a perfect blend of classical elegance.</p>
+              <div class="set-location-in-roomContent">
+                <a href="#">Read more &rarr;</a>
+                <p style="top: 50px;">Rates from $ 96.99</p>
+                <button type="button" class="btn btn-outline-primary">BOOK NOW</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 room-style">
+            <div class="item-img">
+              <img src="./image/Club-Room.jpg" alt="Club-Room">
+            </div>
+            <div class="room-content">
+              <a href="#" class="name-hotel"><p>CLUB ROOM</p></a>
+              <p>Located on upper level with panoramic view of Thu Le lake, the Club Room is the perfect retreat to leave behind the hassle of daily life and experience.</p>
+              <div class="set-location-in-roomContent">
+                <a href="#">Read more &rarr;</a>
+                <p style="top: 50px;">Rates from $ 121.44</p>
+                <button type="button" class="btn btn-outline-primary">BOOK NOW</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+
+
+      </div>
+    </div>
+    
+  </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

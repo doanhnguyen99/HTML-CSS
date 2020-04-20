@@ -9,7 +9,7 @@ body{
 
 .header{
     /* background-image: url(../image/bg-masthead.jpg); */
-    background: linear-gradient(rgba(101, 84, 72, 0.7), rgba(101, 84, 72, 0.7)), url(../image/bg-masthead.jpg);
+    background: linear-gradient(rgba(101, 84, 72, 0.7), rgba(101, 84, 72, 0.7)), url(../image/hotels.jpg);
     /* background: linear-gradient(to right top, #313333, #434645, #565958, #6b6d6a, #81827e), url(../image/bg-masthead.jpg); */
     height: 730px;
     color: white;
@@ -58,7 +58,7 @@ body{
 
 .slogan-header{
     /* padding: 0 50px; */
-    margin-top: 180px;
+    margin-top: 80px;
     height: 150px;
     width: 100%;
     display: flex;
@@ -140,32 +140,11 @@ body{
     background-color: #f14b1c;
 }
 
-.main{
-    height: 450px;
-    width: 100%;
-    background-color: #f4623a;
+.date-book{
+    margin-top: 50px;
 }
+
 
 /* Main */
-.main{
-    padding-top: 70px;
-}
 
-.slogan-header:nth-child(1){
-    margin: 0;
-    height: 80px;
-    color: white;
-}
-
-/* Button */
-
-.custom-button{
-    margin-top: 30px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    
-}
 
