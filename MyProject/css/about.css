@@ -39,3 +39,22 @@ body{
     font-size: 18px;
     margin-right: 15px;
 }
+
+/* Main */
+
+.main-about{
+    /* height: 580px; */
+    padding: 105px 15px;
+}
+
+.about-content{
+    height: 690px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.about-content .item-about{
+    padding: 0;
+}
