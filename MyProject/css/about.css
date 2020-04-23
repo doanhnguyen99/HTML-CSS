@@ -25,11 +25,11 @@ body{
     color: rgb(115, 154, 194);
 }
 
-.title-about{
+.title-common{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    /* height: 400px; */
     color: white;
 }
 

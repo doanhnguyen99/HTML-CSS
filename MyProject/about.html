@@ -13,33 +13,34 @@
 
 <body>
     <div class="header-about">
+      <nav class="navbar sticky-top navbar-expand-lg bg-dark custom-header">
         <div class="container">
-          <div class="row row-header">
-            <!-- Logo Header -->
-            <div class="col-md-4">
-              <a href="#" class="title-header">
-                <p class="h1">HaNoi Hotel</p>
-              </a>
-            </div>
+          <a class="navbar-brand" href="#">HaNoi Hotel</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+          </button>
     
-            <!-- Navbar Header -->
-            <div class="col-md-5 header-content">
-              <div class="topnav">
-                <a href="./index.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./room.html">Room</a>
-                <a href="./blog.html">Blog</a>
-              </div>
-            </div>
-    
-            <!-- Button Neccessary -->
-            <div class="col-md-3">
-              <a href="./login.html"><button class="btn btn-danger" type="submit">Login</button></a>
-              <a href="./register.html"><button class="btn btn-success" type="submit">Register</button></a>
-            </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="./room.html">Room</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./blog.html">Blog</a>
+                  <li class="nav-item">
+                    <a href="./login.html"><button class="btn btn-danger" type="submit">Login</button></a>
+                    <a href="./register.html"><button class="btn btn-success" type="submit">Register</button></a>
+                  </li>
+            </ul>
           </div>
-    
-          <div class="row title-about">
+        </div>
+      </nav>
+        <div class="container title-common">
+          <div class="row">
             <div class="set-position-title">
                 <h1>About</h1>
                 <a href="#">Home</a>
