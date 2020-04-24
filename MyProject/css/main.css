@@ -79,7 +79,8 @@
     text-shadow: .4px .4px 5px rgba(0, 0, 0, .2);
 }
 
-@media (min-width: 540px){
+
+@media (max-width: 765px){
     .room-style{
         height: 500px;
         width: 450px;
@@ -93,3 +94,43 @@
         font-size: 20px;
     }
 }
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .room-homepage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .room-style{
+        width: 500px;
+        height: 500px !important;
+        padding-right: 0;
+    }
+
+    .room-style img{
+        width: 100% !important;
+    }
+}
+
+@media only screen
+    and (min-width: 1025px)
+    and (max-width: 1200px)
+    and (-webkit-min-device-pixel-ratio: 1){
+        .room-homepage{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .room-style{
+            margin: 30px 35px !important;
+        }
+
+        img{
+            width: 240px !important;
+        }
+    }

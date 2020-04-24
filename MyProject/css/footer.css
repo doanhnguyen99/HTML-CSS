@@ -1,6 +1,6 @@
 footer{
     margin-top: 50px;
-    height: 460px;
+    /* height: 460px; */
     background-color: #fa6b7b;
     padding-top: 20px;
     color: white;
@@ -15,6 +15,10 @@ footer{
     margin-bottom: 30px;
 }
 
+.item-icon-logo{
+    margin: 0 20px;
+}
+
 .feedback{
     height: 410px;
     width: 290px;
@@ -24,4 +28,16 @@ footer{
     position: relative;
     padding: 15px;
     color: #3583d6;
+}
+
+
+
+@media(max-width: 765px){
+    .logo-footer{
+        margin-bottom: 20px;
+    }
+
+    .wrapper-feedback{
+        padding-left: 50px;
+    }
 }

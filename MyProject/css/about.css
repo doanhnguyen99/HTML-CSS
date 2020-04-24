@@ -51,10 +51,38 @@ body{
     height: 690px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     margin-bottom: 50px;
 }
 
 .about-content .item-about{
     padding: 0;
+}
+
+@media(max-width: 750px){
+    footer{
+        margin-top: 400px;
+    }
+}
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .about-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        margin-top: 500px;
+    }
+
+    .wrapper-infomation{
+        margin-top: 800px;
+        position: absolute;
+        left: 280px;
+    }
+
+    
 }
