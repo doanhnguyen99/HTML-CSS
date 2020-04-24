@@ -93,3 +93,41 @@ body{
     width: 80px;
     box-sizing: border-box;
 }
+
+/* Reponsive */
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .blog-item-responsive{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .wrapper-item{
+        margin-left: 140px;
+        width: 400px !important;
+    }
+
+    .clear-fix{
+        width: 500px !important;
+        margin-left: 100px;
+    }
+
+    .icon-blog{
+        display: flex;
+        width: 300px;
+        margin-left: 100px;
+    }
+
+    .find-article{
+        margin-left: 100px;
+        width: 400px;
+    }
+
+    .custom-title-blog{
+        width: 200px;
+        margin-left: 100px;
+    }
+}

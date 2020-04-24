@@ -67,3 +67,22 @@ body{
     height: 380px;
     background-size: cover;
 }
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .room-list{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .room-list .content-rates{
+        margin: 0;
+    }
+
+    .content-rates p{
+        margin: 0 10px !important;
+    }
+}
