@@ -62,7 +62,7 @@
                 <div class="content-rates">
                   <p style="margin: 5px 20px;">Rates</p>
                   <p class="h3" style="margin-right: 50px;">$ 74.99</p>
-                  <button type="button" class="btn btn-primary btn-lg">Booking Now</button>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Booking Now</button>
                 </div>
               </div>
           </div>
@@ -74,7 +74,7 @@
                 <div class="content-rates">
                   <p style="margin: 5px 20px;">Rates</p>
                   <p class="h3" style="margin-right: 50px;">$ 84.99</p>
-                  <button type="button" class="btn btn-primary btn-lg">Booking Now</button>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Booking Now</button>
                 </div>
               </div>
             </div>  
@@ -90,7 +90,7 @@
                 <div class="content-rates">
                   <p style="margin: 5px 20px;">Rates</p>
                   <p class="h3" style="margin-right: 50px;">$ 70.99</p>
-                  <button type="button" class="btn btn-primary btn-lg">Booking Now</button>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Booking Now</button>
                 </div>
               </div>
             </div>
@@ -102,7 +102,7 @@
                   <div class="content-rates">
                     <p style="margin: 5px 20px;">Rates</p>
                     <p class="h3" style="margin-right: 50px;">$ 99.99</p>
-                    <button type="button" class="btn btn-primary btn-lg">Booking Now</button>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Booking Now</button>
                   </div>
                 </div>
               </div>  
@@ -118,7 +118,7 @@
                   <div class="content-rates">
                     <p style="margin: 5px 20px;">Rates</p>
                     <p class="h3" style="margin-right: 50px;">$ 85.99</p>
-                    <button type="button" class="btn btn-primary btn-lg">Booking Now</button>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Booking Now</button>
                   </div>
                 </div>
               </div>
@@ -130,7 +130,7 @@
                     <div class="content-rates">
                       <p style="margin: 5px 20px;">Rates</p>
                       <p class="h3" style="margin-right: 50px;">$ 105.99</p>
-                      <button type="button" class="btn btn-primary btn-lg">Booking Now</button>
+                      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Booking Now</button>
                     </div>
                   </div>
                 </div>  
@@ -205,8 +205,66 @@
         </div>
       </footer>
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content modal-popout-bg">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Booking Room</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Type -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Room Type</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">Deluxe Room</option>
+            <option value="2">Grand Deluxe Room</option>
+            <option value="3">Club Room</option>
+          </select>
+        </div>
+        <!-- Amount -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Total Room</span>
+          </div>
+          <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <!-- Check-in & Check-out -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6" style="padding-left: 0;">
+              <label>Check-in Date</span>
+              <input class="form-control" type="date">
+            </div>
+            <div class="col-md-6" style="padding-left: 0;">
+              <label>Check-out Date</span>
+              <input class="form-control" type="date">
+            </div>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <button type="button" class="btn btn-warning" style="margin-top: 20px;">Booking</button>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>  
